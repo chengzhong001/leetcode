@@ -30,8 +30,8 @@ public:
                 flag += 1;
                 continue;
             }
-
-            if (isNegative == true || res.size() >= 0)
+            
+            if (flag == 1 || res.size() >= 0)
             {
                 if (s[i] < '0' || s[i] > '9')
                     break;
