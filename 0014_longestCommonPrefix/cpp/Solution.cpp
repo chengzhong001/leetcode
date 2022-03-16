@@ -10,8 +10,10 @@ public:
         }
         string prefix = strs[0];
         for (int i = 1; i < strs.size(); ++i) {
+            // std::cout << "strs[" << i << "] = " << strs[i] << std::endl;
             while (strs[i].find(prefix) != 0) {
                 prefix.pop_back();
+                // std::cout << "prefix: " << prefix << std::endl;
                 if (prefix.empty()) {
                     return "";
                 }
